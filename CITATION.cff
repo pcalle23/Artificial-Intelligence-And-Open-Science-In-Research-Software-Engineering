@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite as below"
+title: "Inteligenica Artificial y Ciencia Abierta en Ingenieria de Software de Investigacion"
+authors:
+  - family-names: "Calle Tercero"
+    given-names: "Pablo"
+version: 1.0.0
+date-released: 2026-03-11

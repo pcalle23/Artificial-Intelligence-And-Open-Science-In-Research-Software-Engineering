@@ -1,0 +1,142 @@
+{
+    "2603.03417v1.pdf": {
+        "abstract": "Parallel test-time scaling, which generates multiple candidate solutions for a single problem, is a powerful technique for improving large language model performance. However, it is hindered by two key bottlenecks: accurately selecting the correct solution from the candidate pool, and the high inference latency from generating many full solutions. We argue that both challenges are fundamentally linked to verifier calibration. A wellcalibrated verifier not only improves answer selection, but also enables early-stopping strategies to reduce latency. However, existing verifiers are limited as they score each candidate in isolation, overlooking rich contextual information across the set of candidates. To address this, we introduce the Multi-Sequence Verifier (MSV), the first verifier designed to jointly process all candidate solutions and model their interactions. MSV achieves improved calibration, which directly enhances best-of-N selection performance. We further introduce a streaming MSV variant that empowers a novel early-stopping framework. Our novel framework fully leverages parallel decoding, which contrasts with the existing multisequence early exit works that decode sequences one by one and thus incur significant latency. In this novel setting, MSV can achieve the same target accuracy with around half the latency that would be required with its counterpart that scores each solution in isolation.",
+        "numero_figuras": 41,
+        "enlaces": [
+            "https://arxiv.org/abs/2408.15240,1",
+            "https://github.com/kermitt2/grobid",
+            "https://arxiv.org/abs/2206.14858,1",
+            "https://arxiv.org/abs/2504.05419"
+        ]
+    },
+    "2603.03919v1.pdf": {
+        "abstract": "Retrieval-Augmented Generation (RAG) enhances the capabilities of large language models (LLMs) by incorporating external knowledge, but its reliance on potentially poisonable knowledge bases introduces new availability risks. Attackers can inject documents that cause LLMs to refuse benign queries, attacks known as blocking attacks. Prior blocking attacks relying on adversarial suffixes or explicit instruction injection are increasingly ineffective against modern safety-aligned LLMs. We observe that safety-aligned LLMs exhibit heightened sensitivity to query-relevant risk signals, causing alignment mechanisms designed for harm prevention to become a source of exploitable refusal. Moreover, mainstream alignment practices share overlapping risk categories and refusal criteria, a phenomenon we term alignment homogeneity, enabling restricted risk context constructed on an accessible LLM to transfer across LLMs. Based on this insight, we propose TabooRAG, a transferable blocking attack framework operating under a strict black-box setting. An attacker can generate a single retrievable blocking document per query by optimizing against a surrogate LLM in an accessible RAG environment, and directly transfer it to an unknown target RAG system without access to the target model. We further introduce a query-aware strategy library to reuse previously effective strategies and improve optimization efficiency. Experiments across 7 modern LLMs and 3 datasets demonstrate that TabooRAG achieves",
+        "numero_figuras": 34,
+        "enlaces": [
+            "https://github.com/tatsu-lab/stanford_alpaca",
+            "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+            "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+            "https://model-spec.openai.com/2025-12-18.html",
+            "https://platform.openai.com/docs/guides/embeddings",
+            "https://github.com/kermitt2/grobid",
+            "https://openai.com/index/gpt-5-system-card"
+        ]
+    },
+    "2603.04186v1.pdf": {
+        "abstract": "Public labeled log data sets of attack traces and artifacts. \u2022 Analysis and categorization of cyber attack manifestations. \u2022 LLM-based interpretation of system logs and security alerts.",
+        "numero_figuras": 41,
+        "enlaces": [
+            "https://github.com/mdecrevoisier/EVTX-to-MITRE-Attack",
+            "https://github.com/sbousseaden/EVTX-ATTACK-SAMPLES",
+            "https://github.com/UraSecTeam/mordor",
+            "https://github.com/kermitt2/grobid",
+            "https://github.com/arniki/atomic-evtx"
+        ]
+    },
+    "2603.04459v1.pdf": {
+        "abstract": "The rapid growth of research in LLM safety makes it hard to track all advances. Benchmarks are therefore crucial for capturing key trends and enabling systematic comparisons. Yet, it remains unclear why certain benchmarks gain prominence, and no systematic assessment has been conducted on their academic influence or code quality. This paper fills this gap by presenting the first multi-dimensional evaluation of the influence (based on five metrics) and code quality (based on both automated and human assessment) on LLM safety benchmarks, analyzing 31 benchmarks and 382 nonbenchmarks across prompt injection, jailbreak, and hallucination. We find that benchmark papers show no significant advantage in academic influence (e.g., citation count and density) over non-benchmark papers. We uncover a key misalignment: while author prominence correlates with paper influence, neither author prominence nor paper influence shows a significant correlation with code quality. Our results also indicate substantial room for improvement in code and supplementary materials: only 39% of repositories are ready-to-use, 16% include flawless installation guides, and a mere 6% address ethical considerations. Given that the work of prominent researchers tends to attract greater attention, they need to lead the effort in setting higher standards.",
+        "numero_figuras": 17,
+        "enlaces": [
+            "https://paperswithcode.com/api/v1/docs/,2024.1",
+            "https://https://github.com/ydyjya/Awesome-LLM-Safety/,2024.1",
+            "https://github.com/chawins/llm-sp/",
+            "https://support.minitab.com/en-us/minitab/help-and-how-to/statistics/basic-statistics/how-to/correlation/before-you-start/data-considerations",
+            "https://github.com/corca-ai/awesome-llm-security/",
+            "https://tidsskriftet.no/en/2024/08/medicine-and-numbers/sample-size-prediction-model",
+            "https://docs.github.com/en/graphql/,2024.1",
+            "https://www.statsols.com/guides/sample-size-for-regression-models",
+            "https://web.pdx.edu/~newsomj/ho_sample%20size.pdf",
+            "https://pypi.org/project/radon/,2023.4",
+            "https://github.com/kermitt2/grobid",
+            "https://scholar.google.com/,2024.1"
+        ]
+    },
+    "2603.04742v1.pdf": {
+        "abstract": "Sparse matrix-vector multiplication (SpMV) is a fundamental operation in scientific computing, data analysis, and machine learning. When the data being processed are sensitive, preserving privacy becomes critical, and homomorphic encryption (HE) has emerged as a leading approach for addressing this challenge. Although HE enables privacy-preserving computation, its application to SpMV has remained largely unaddressed. To the best of our knowledge, this paper presents the first framework that efficiently integrates HE with SpMV, addressing the dual challenges of computational efficiency and data privacy. In particular, we introduce a novel compressed matrix format, named Compressed Sparse Sorted Column (CSSC), which is specifically designed to optimize encrypted sparse matrix computations. By preserving sparsity and enabling efficient ciphertext packing, CSSC significantly reduces storage and computational overhead. Our experimental results on real-world datasets demonstrate that the proposed method achieves significant gains in both processing time and memory usage. This study advances privacy-preserving SpMV and lays the groundwork for secure applications in federated learning, encrypted databases, and scientific computing, and beyond.",
+        "numero_figuras": 15,
+        "enlaces": [
+            "https://docs.python.org/3/library/tracemalloc.html",
+            "https://doi.org/10.1145/3508041",
+            "https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-juve",
+            "https://doi.org/10.1109/TPDS.2024.10713183",
+            "https://www.iacr.org/archive/eurocrypt2015/90560159/90560159.pdf",
+            "https://doi.org/10.1145/3673038.3673055",
+            "https://github.com/kermitt2/grobid"
+        ]
+    },
+    "2603.04801v1.pdf": {
+        "abstract": "Electromagnetic (EM) shielding is widely used to suppress radiated emissions and limit passive EM side-channel leakage. However, shielding does not address active probing, where an adversary injects external radio-frequency (RF) signals and observes the device's reflective response. This work studies whether such impedance-modulated backscattering persists when radiated emissions are suppressed by shielding. By injecting controlled RF signals and analyzing the reflections, we demonstrate that state-dependent impedance variations remain observable at frequencies outside the shields' primary attenuation band. Using processors implemented on FPGA and microcontroller prototypes, and evaluating workload profiles under three industry-standard shields, we find that passive EM measurements lose discriminative power under shielding, while backscattering responses remain separable. These results indicate that active RF probing can expose execution-dependent behavior even in shielded systems, motivating the need to consider active impedance-based probing within hardware security evaluation flows.",
+        "numero_figuras": 5,
+        "enlaces": [
+            "https://github.com/kermitt2/grobid",
+            "https://www.tek.com/en/products/spectrum-analyzers/rsa306"
+        ]
+    },
+    "2603.04859v1.pdf": {
+        "abstract": "Transfer learning is devised to leverage knowledge from pre-trained models to solve new tasks with limited data and computational resources. Meanwhile, dataset distillation has emerged to synthesize a compact dataset that preserves critical information from the original large dataset. Therefore, a combination of transfer learning and dataset distillation offers promising performance in evaluations. However, a non-negligible security threat remains undiscovered in transfer learning using synthetic datasets generated by dataset distillation methods, where an adversary can perform a model hijacking attack with only a few poisoned samples in the synthetic dataset. To reveal this threat, we propose Osmosis Distillation (OD) attack, a novel model hijacking strategy that targets deep learning models using the fewest samples. The adversary aims to stealthily incorporate a hijacking task into the victim model, forcing it to perform malicious functions without alerting the victim. OD attack focuses on efficiency and stealthiness by using the fewest synthetic samples to complete the attack. To achieve this, we devise a Transporter that employs a U-Net-based encoderdecoder architecture. The Transporter generates osmosis samples by optimizing visual and semantic losses to ensure that the hijacking task is difficult to detect. The osmosis samples are then distilled into a distilled osmosis set using our specifically designed key patch selection, label reconstruction, and training trajectory matching, ensuring that the distilled osmosis samples retain the properties of the osmosis samples. The model trained on the distilled osmosis dataset can perform the original and hijacking tasks seamlessly. Comprehensive evaluations on various datasets demonstrate that the OD attack attains high attack success rates in hidden tasks while preserving high model utility in original tasks. Furthermore, the distilled osmosis set enables model hijacking across diverse model architectures, allowing model hijacking in transfer learning with considerable attack performance and model utility. We argue that awareness of using third-party synthetic datasets in transfer learning must be raised.",
+        "numero_figuras": 21,
+        "enlaces": [
+            "https://openreview.net/forum?id=l-PrrQrK0QR",
+            "https://api.semanticscholar.org/CorpusID",
+            "http://arxiv.org/abs/1811.10959",
+            "https://doi.org/10.1609/aaai.v39i16.33884",
+            "https://openreview.net/forum?id=mSAKhLYLSsl",
+            "https://doi.org/10.1145/3359789.3359790",
+            "https://doi.org/10.1145/2976749.2978318APPENDIX",
+            "https://www.ndss-symposium.org/ndss-paper/auto-draft-241/",
+            "http://jmlr.org/papers/v9/vandermaaten08a.html",
+            "http://yann.lecun.com/exdb/mnist/",
+            "https://doi.ieeecomputersociety.org/10.1109/CVPR.2017.243",
+            "http://arxiv.org/abs/1409.1556",
+            "https://github.com/kermitt2/grobid"
+        ]
+    },
+    "2603.04902v1.pdf": {
+        "abstract": "Agentic systems are increasingly acting on users' behalf, accessing calendars, email, and personal files to complete everyday tasks. Privacy evaluation for these systems has focused on the input and output boundaries, but each task involves several intermediate information flows, from agent queries to tool responses, that are not currently evaluated. We argue that every boundary in an agentic pipeline is a site of potential privacy violation and must be assessed independently. To support this, we introduce the Privacy Flow Graph, a Contextual Integrity-grounded framework that decomposes agentic execution into a sequence of information flows, each annotated with the five CI parameters, and traces violations to their point of origin. We present AgentSCOPE, a benchmark of 62 multi-tool scenarios across eight regulatory domains with ground truth at every pipeline stage. Our evaluation across seven state-of-the-art LLMs show that privacy violations in the pipeline occur in over 80% of scenarios, even when final outputs appear clean (24%), with most violations arising at the tool-response stage where APIs return sensitive data indiscriminately. These results indicate that output-level evaluation alone substantially underestimates the privacy risk of agentic systems.",
+        "numero_figuras": 3,
+        "enlaces": [
+            "https://openreview.net/forum?id=roNSXZpUDN",
+            "https://github.com/kermitt2/grobid"
+        ]
+    },
+    "2603.05068v1.pdf": {
+        "abstract": "As artificial intelligence (AI) becomes deeply embedded in critical services and everyday products, it is increasingly exposed to security threats which traditional cyber defenses were not designed to handle. In this paper, we investigate how cyber threat intelligence (CTI) may evolve to address attacks that target AI systems. We first analyze the assumptions and workflows of conventional threat intelligence with the needs of AI-focused defense, highlighting AI-specific assets and vulnerabilities. We then review and organize the current landscape of AI security knowledge. Based on this, we outline what an AI-oriented threat intelligence knowledge base should contain, describing concrete indicators of compromise (IoC) for different AI supply-chain phases and artifacts, and showing how such a knowledge base could support security tools. Finally, we discuss techniques for measuring similarity between collected indicators and newly observed AI artifacts. The review reveals gaps and quality issues in existing resources and identifies potential future research directions toward a practical threat intelligence framework tailored to AI.",
+        "numero_figuras": 10,
+        "enlaces": [
+            "https://owaspai.org",
+            "https://airisk.mit.edu/ai-incident-tracker",
+            "https://atlas.mitre.org/matrices/ATLAS",
+            "https://www.enisa.europa.eu/sites/default/files/publications/Multilayer%20Framework%20for%20Good%20Cybersecurity%20Practices%20for%20AI.pdf",
+            "https://www.hiddenlayer.com/research/evaluating-prompt-injection-datasets",
+            "https://nsfocusglobal.com/ai-supply-chain-security-hugging-face-malicious-ml-models",
+            "https://www.reversinglabs.com/blog/rl-identifies-malware-ml-model-hosted-on-hugging-face",
+            "https://avidml.org",
+            "https://huggingface.co/datasets/geekyrakshit/prompt-injection-dataset10https://huggingface.co/datasets/imoxto/promptinjectioncleaneddataset11https://huggingface.co/datasets/Lakera/mosscappromptinjection12https://www.kaggle.com/datasets/arielzilber/prompt-injection-in-the-wild13https://www.kaggle.com/datasets/marycamilainfo/prompt-injection-malignant14https://huggingface.co/datasets/ahsanayub/malicious-promptsReferences",
+            "https://incidentdatabase.ai",
+            "https://github.com/kermitt2/grobid",
+            "https://www.saif.google"
+        ]
+    },
+    "2603.05414v1.pdf": {
+        "abstract": "Introspection is a foundational cognitive ability, but its mechanism is not well understood. Recent work has shown that AI models can introspect. We study their mechanism of introspection, first extensively replicating Lindsey (2025)'s thought injection detection paradigm in large open-source models. We show that these models detect injected representations via two separable mechanisms: (i) probability-matching (inferring from perceived anomaly of the prompt) and (ii) direct access to internal states. The direct access mechanism is content-agnostic: models detect that an anomaly occurred but cannot reliably identify its semantic content. The two model classes we study confabulate injected concepts that are high-frequency and concrete (e.g., \"apple\"); for them correct concept guesses typically require significantly more tokens. This content-agnostic introspective mechanism is consistent with leading theories in philosophy and psychology.",
+        "numero_figuras": 15,
+        "enlaces": [
+            "https://arxiv.org/abs/2505.17120",
+            "https://arxiv.org/abs/2411.00986",
+            "http://www.springerlink.com/index/10.3758/BRM.41.4.977",
+            "https://arxiv.org/abs/2511.08579",
+            "https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens.LessWrongpost",
+            "https://transformer-circuits.pub/2025/introspection/index.html.Trans-formerCircuitsThread",
+            "https://arxiv.org/abs/2303.07103",
+            "https://arxiv.org/abs/2506.05068",
+            "https://arxiv.org/abs/2503.07513",
+            "https://arxiv.org/abs/2308.08708",
+            "https://arxiv.org/abs/2508.14802",
+            "https://openreview.net/forum?id=6GGhnrQ2EV",
+            "https://openreview.net/forum?id=IjQ2Jtemzy",
+            "https://openreview.net/forum?id=eb5pkwIB5i",
+            "https://x.com/neev_parikh/status/2002339925103161624",
+            "https://github.com/kermitt2/grobid"
+        ]
+    }
+}

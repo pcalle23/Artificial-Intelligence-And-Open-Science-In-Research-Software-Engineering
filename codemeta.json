@@ -1,0 +1,17 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "https://github.com/pcalle23/Artificial-Intelligence-And-Open-Science-In-Research-Software-Engineering.git",
+  "name": "Inteligencia Artificial y Ciencia Abierta en Ingeniería de Software de Investigación",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Pablo",
+      "familyName": "Calle Tercero"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "https://spdx.org/licenses/Apache-2.0",
+  "programmingLanguage": ["Python", "Dockerfile"],
+  "description": "Herramienta con docker para analizar PDF con Grobid, extraer palabras en abstracts, contar figuras y listar URLs."
+}
