@@ -32,3 +32,6 @@ figuras_por_articulo.png: Gráfico comparativo del número de figuras por paper.
 
 lista_enlaces.md: Recopilación estructurada de todas las URLs encontradas.
 
+
+## LICENCIA
+Este proyecto está bajo la licencia Apache 2.0.
